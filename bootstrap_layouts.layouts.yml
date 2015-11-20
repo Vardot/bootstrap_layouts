@@ -1,0 +1,182 @@
+booststrap-12:
+  label: Boostrap One Column: 12
+  category: My Layouts
+  template: templates/bootstrap-12
+  regions:
+    main:
+      label: Main content
+booststrap-1-11:
+  label: Boostrap Two Column: 1-11
+  category: My Layouts
+  template: templates/bootstrap-1-11
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-2-10:
+  label: Boostrap Two Column: 2-10
+  category: My Layouts
+  template: templates/bootstrap-2-10
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-3-9:
+  label: Boostrap Two Column: 3-9
+  category: My Layouts
+  template: templates/bootstrap-3-9
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-4-8:
+  label: Boostrap Two Column: 4-8
+  category: My Layouts
+  template: templates/bootstrap-4-8
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-5-7:
+  label: Boostrap Two Column: 5-7
+  category: My Layouts
+  template: templates/bootstrap-5-7
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-6-6:
+  label: Boostrap Two Column: 6-6
+  category: My Layouts
+  template: templates/bootstrap-6-6
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-6-6-bricks:
+  label: Boostrap Two Column: 6-6 bricks
+  category: My Layouts
+  template: templates/bootstrap-6-6-bricks
+  regions:
+    top:
+      label: Top
+    upper_left:
+      label: Upper Left
+    upper_right:
+      label: Upper Right
+    middle:
+      label: Middle
+    lower_left:
+      label: Lower Left
+    lower_right:
+      label: Lower Right
+    bottom:
+      label: Bottom
+bootstrap-6-6-stacked:
+  label: Boostrap Two Column: 6-6 Stacked
+  category: My Layouts
+  template: templates/bootstrap-6-6-stacked
+  regions:
+    top:
+      label: Top
+    sidebar_left:
+      label: Sidebar Left
+    sidebar_right:
+      label: Sidebar Right
+    bottom:
+      label: Bottom
+booststrap-7-5:
+  label: Boostrap Two Column: 7-5
+  category: My Layouts
+  template: templates/bootstrap-7-5
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-8-4:
+  label: Boostrap Two Column: 8-4
+  category: My Layouts
+  template: templates/bootstrap-8-4
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-9-3:
+  label: Boostrap Two Column: 9-3
+  category: My Layouts
+  template: templates/bootstrap-9-3
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-10-2:
+  label: Boostrap Two Column: 10-2
+  category: My Layouts
+  template: templates/bootstrap-10-2
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-11-1:
+  label: Boostrap Two Column: 11-1
+  category: My Layouts
+  template: templates/bootstrap-11-1
+  regions:
+    sidebar_right:
+      label: Sidebar Right
+    sidebar_left:
+      label: Sidebar Left
+booststrap-2-8-2:
+  label: Boostrap Three Column: 2-8-2
+  category: My Layouts
+  template: templates/bootstrap-2-8-2
+  regions:
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right
+booststrap-3-6-3:
+  label: Boostrap Three Column: 3-6-3
+  category: My Layouts
+  template: templates/bootstrap-3-6-3
+  regions:
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right
+booststrap-4-4-4:
+  label: Boostrap Three Column: 4-4-4
+  category: My Layouts
+  template: templates/bootstrap-4-4-4
+  regions:
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right
+booststrap-5-5-2:
+  label: Boostrap Three Column: 5-5-2
+  category: My Layouts
+  template: templates/booststrap-5-5-2
+  regions:
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right

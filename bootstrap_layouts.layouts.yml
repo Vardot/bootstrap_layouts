@@ -1,14 +1,17 @@
 booststrap-12:
-  label: Bootstrap One Column: 12
+  label: Bootstrap One Column 12
   category: Bootstrap Layouts
-  template: templates/bootstrap-12
+  path: templates/one-column/bootstrap-12
+  icon: bootstrap-12.png
+  template: bootstrap-12
   regions:
     main:
       label: Main content
 booststrap-1-11:
   label: Bootstrap Two Column: 1-11
   category: Bootstrap Layouts
-  template: templates/bootstrap-1-11
+  path: templates/two-columns/bootstrap-1-11
+  template: bootstrap-1-11
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -17,7 +20,8 @@ booststrap-1-11:
 booststrap-2-10:
   label: Bootstrap Two Column: 2-10
   category: Bootstrap Layouts
-  template: templates/bootstrap-2-10
+  path: templates/two-columns/bootstrap-2-10
+  template: bootstrap-2-10
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -26,7 +30,8 @@ booststrap-2-10:
 booststrap-3-9:
   label: Bootstrap Two Column: 3-9
   category: Bootstrap Layouts
-  template: templates/bootstrap-3-9
+  path: templates/two-columns/bootstrap-3-9
+  template: bootstrap-3-9
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -35,7 +40,8 @@ booststrap-3-9:
 booststrap-4-8:
   label: Bootstrap Two Column: 4-8
   category: Bootstrap Layouts
-  template: templates/bootstrap-4-8
+  path: templates/two-columns/bootstrap-4-8
+  template: bootstrap-4-8
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -44,7 +50,8 @@ booststrap-4-8:
 booststrap-5-7:
   label: Bootstrap Two Column: 5-7
   category: Bootstrap Layouts
-  template: templates/bootstrap-5-7
+  path: templates/two-columns/bootstrap-5-7
+  template: bootstrap-5-7
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -53,7 +60,8 @@ booststrap-5-7:
 booststrap-6-6:
   label: Bootstrap Two Column: 6-6
   category: Bootstrap Layouts
-  template: templates/bootstrap-6-6
+  path: templates/two-columns/bootstrap-6-6
+  template: bootstrap-6-6
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -94,7 +102,8 @@ bootstrap-6-6-stacked:
 booststrap-7-5:
   label: Bootstrap Two Column: 7-5
   category: Bootstrap Layouts
-  template: templates/bootstrap-7-5
+  path: templates/two-columns/bootstrap-7-5
+  template: bootstrap-7-5
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -103,7 +112,8 @@ booststrap-7-5:
 booststrap-8-4:
   label: Bootstrap Two Column: 8-4
   category: Bootstrap Layouts
-  template: templates/bootstrap-8-4
+  path: templates/two-columns/bootstrap-8-4
+  template: bootstrap-8-4
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -112,7 +122,8 @@ booststrap-8-4:
 booststrap-9-3:
   label: Bootstrap Two Column: 9-3
   category: Bootstrap Layouts
-  template: templates/bootstrap-9-3
+  path: templates/two-columns/bootstrap-9-3
+  template: bootstrap-9-3
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -121,7 +132,8 @@ booststrap-9-3:
 booststrap-10-2:
   label: Bootstrap Two Column: 10-2
   category: Bootstrap Layouts
-  template: templates/bootstrap-10-2
+  path: templates/two-columns/bootstrap-10-2
+  template: bootstrap-10-2
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -130,7 +142,8 @@ booststrap-10-2:
 booststrap-11-1:
   label: Bootstrap Two Column: 11-1
   category: Bootstrap Layouts
-  template: templates/bootstrap-11-1
+  path: templates/two-columns/bootstrap-11-1
+  template: bootstrap-11-1
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -139,7 +152,8 @@ booststrap-11-1:
 booststrap-2-8-2:
   label: Bootstrap Three Column: 2-8-2
   category: Bootstrap Layouts
-  template: templates/bootstrap-2-8-2
+  path: templates/three-columns/bootstrap-2-8-2
+  template: bootstrap-2-8-2
   regions:
     sidebar_left:
       label: Sidebar Left
@@ -150,7 +164,8 @@ booststrap-2-8-2:
 booststrap-3-6-3:
   label: Bootstrap Three Column: 3-6-3
   category: Bootstrap Layouts
-  template: templates/bootstrap-3-6-3
+  path: templates/three-columns/bootstrap-3-6-3
+  template: bootstrap-3-6-3
   regions:
     sidebar_left:
       label: Sidebar Left
@@ -161,7 +176,8 @@ booststrap-3-6-3:
 booststrap-4-4-4:
   label: Bootstrap Three Column: 4-4-4
   category: Bootstrap Layouts
-  template: templates/bootstrap-4-4-4
+  path: templates/three-columns/bootstrap-4-4-4
+  template: bootstrap-4-4-4
   regions:
     sidebar_left:
       label: Sidebar Left
@@ -172,7 +188,8 @@ booststrap-4-4-4:
 booststrap-5-5-2:
   label: Bootstrap Three Column: 5-5-2
   category: Bootstrap Layouts
-  template: templates/bootstrap-5-5-2
+  path: templates/three-columns/bootstrap-5-5-2
+  template: bootstrap-5-5-2
   regions:
     sidebar_left:
       label: Sidebar Left

@@ -2,7 +2,7 @@ booststrap-12:
   label: Bootstrap One Column 12
   category: Bootstrap Layouts
   path: templates/one-column/bootstrap-12
-  icon: bootstrap-12.png
+  icon: bootstrap_onecol_12.png
   template: bootstrap-12
   regions:
     main:
@@ -11,6 +11,7 @@ booststrap-1-11:
   label: Bootstrap Two Column: 1-11
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-1-11
+  icon: bootstrap_twocol_1_11.png
   template: bootstrap-1-11
   regions:
     sidebar_right:
@@ -21,6 +22,7 @@ booststrap-2-10:
   label: Bootstrap Two Column: 2-10
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-2-10
+  icon: bootstrap_twocol_2_10.png
   template: bootstrap-2-10
   regions:
     sidebar_right:
@@ -31,6 +33,7 @@ booststrap-3-9:
   label: Bootstrap Two Column: 3-9
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-3-9
+  icon: bootstrap_twocol_3_9.png
   template: bootstrap-3-9
   regions:
     sidebar_right:
@@ -41,6 +44,7 @@ booststrap-4-8:
   label: Bootstrap Two Column: 4-8
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-4-8
+  icon: bootstrap_twocol_4_8.png
   template: bootstrap-4-8
   regions:
     sidebar_right:
@@ -51,6 +55,7 @@ booststrap-5-7:
   label: Bootstrap Two Column: 5-7
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-5-7
+  icon: bootstrap_twocol_5_7.png
   template: bootstrap-5-7
   regions:
     sidebar_right:
@@ -61,6 +66,7 @@ booststrap-6-6:
   label: Bootstrap Two Column: 6-6
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-6-6
+  icon: bootstrap_twocol_6_6.png
   template: bootstrap-6-6
   regions:
     sidebar_right:
@@ -68,9 +74,11 @@ booststrap-6-6:
     sidebar_left:
       label: Sidebar Left
 booststrap-6-6-bricks:
-  label: Bootstrap Two Column: 6-6 bricks
+  label: Bootstrap Two Column: 6-6 Bricks
   category: Bootstrap Layouts
-  template: templates/bootstrap-6-6-bricks
+  path: templates/bricks/bootstrap-6-6-bricks
+  template: bootstrap-6-6-bricks
+  icon: bootstrap_twocol_6_6_bricks.png
   regions:
     top:
       label: Top
@@ -89,7 +97,9 @@ booststrap-6-6-bricks:
 bootstrap-6-6-stacked:
   label: Bootstrap Two Column: 6-6 Stacked
   category: Bootstrap Layouts
-  template: templates/bootstrap-6-6-stacked
+  path: templates/stacked/bootstrap-6-6-stacked
+  template: bootstrap-6-6-stacked
+  icon: bootstrap_twocol_6_6_stacked.png
   regions:
     top:
       label: Top
@@ -104,6 +114,7 @@ booststrap-7-5:
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-7-5
   template: bootstrap-7-5
+  icon: bootstrap_twocol_7_5.png
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -114,6 +125,7 @@ booststrap-8-4:
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-8-4
   template: bootstrap-8-4
+  icon: bootstrap_twocol_8_4.png
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -124,6 +136,7 @@ booststrap-9-3:
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-9-3
   template: bootstrap-9-3
+  icon: bootstrap_twocol_9_3.png
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -134,6 +147,7 @@ booststrap-10-2:
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-10-2
   template: bootstrap-10-2
+  icon: bootstrap_twocol_10_2.png
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -144,6 +158,7 @@ booststrap-11-1:
   category: Bootstrap Layouts
   path: templates/two-columns/bootstrap-11-1
   template: bootstrap-11-1
+  icon: bootstrap_twocol_11_1.png
   regions:
     sidebar_right:
       label: Sidebar Right
@@ -154,6 +169,33 @@ booststrap-2-8-2:
   category: Bootstrap Layouts
   path: templates/three-columns/bootstrap-2-8-2
   template: bootstrap-2-8-2
+  icon: bootstrap_threecol_2_8_2.png
+  regions:
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right
+booststrap-2-2-8:
+  label: Bootstrap Three Column: 2-2-8
+  category: Bootstrap Layouts
+  path: templates/three-columns/bootstrap-2-2-8
+  template: bootstrap-2-2-8
+  icon: bootstrap_threecol_2_2_8.png
+  regions:
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right
+booststrap-8-2-2:
+  label: Bootstrap Three Column: 8-2-2
+  category: Bootstrap Layouts
+  path: templates/three-columns/bootstrap-8-2-2
+  template: bootstrap-8-2-2
+  icon: bootstrap_threecol_8_2_2.png
   regions:
     sidebar_left:
       label: Sidebar Left
@@ -166,6 +208,7 @@ booststrap-3-6-3:
   category: Bootstrap Layouts
   path: templates/three-columns/bootstrap-3-6-3
   template: bootstrap-3-6-3
+  icon: bootstrap_threecol_3_6_3.png
   regions:
     sidebar_left:
       label: Sidebar Left
@@ -178,6 +221,7 @@ booststrap-4-4-4:
   category: Bootstrap Layouts
   path: templates/three-columns/bootstrap-4-4-4
   template: bootstrap-4-4-4
+  icon: bootstrap_threecol_4_4_4.png
   regions:
     sidebar_left:
       label: Sidebar Left
@@ -190,6 +234,7 @@ booststrap-5-5-2:
   category: Bootstrap Layouts
   path: templates/three-columns/bootstrap-5-5-2
   template: bootstrap-5-5-2
+  icon: bootstrap_threecol_5_5_2.png
   regions:
     sidebar_left:
       label: Sidebar Left

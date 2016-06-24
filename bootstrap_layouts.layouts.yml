@@ -229,6 +229,23 @@ booststrap-4-4-4:
       label: Main content
     sidebar_right:
       label: Sidebar Right
+bootstrap-4-4-4-stacked:
+  label: Bootstrap Three Column: 4-4-4 Stacked
+  category: Bootstrap Layouts
+  path: templates/stacked/bootstrap-4-4-4-stacked
+  template: bootstrap-4-4-4-stacked
+  icon: bootstrap_threecol_4_4_4_stacked.png
+  regions:
+    top:
+      label: Top
+    sidebar_left:
+      label: Sidebar Left
+    main:
+      label: Main content
+    sidebar_right:
+      label: Sidebar Right
+    bottom:
+      label: Bottom
 booststrap-5-5-2:
   label: Bootstrap Three Column: 5-5-2
   category: Bootstrap Layouts

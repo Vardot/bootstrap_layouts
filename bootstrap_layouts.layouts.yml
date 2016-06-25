@@ -259,3 +259,47 @@ booststrap-5-5-2:
       label: Main content
     sidebar_right:
       label: Sidebar Right
+bootstrap-3-3-3-3:
+  label: Bootstrap Four Column: 3-3-3-3
+  category: Bootstrap Layouts
+  path: templates/stacked/bootstrap-3-3-3-3
+  template: bootstrap-3-3-3-3
+  icon: bootstrap_fourcol_3_3_3_3.png
+  regions:
+    far_left:
+      label: Far Left
+    mid_left:
+      label: Mid Left
+    mid_right:
+      label: Mid Right
+    far_right:
+      label: Far Right
+bootstrap-3-3-3-3-stacked:
+  label: Bootstrap Four Column: 3-3-3-3 Stacked
+  category: Bootstrap Layouts
+  path: templates/stacked/bootstrap-3-3-3-3-stacked
+  template: bootstrap-3-3-3-3-stacked
+  icon: bootstrap_fourcol_3_3_3_3_stacked.png
+  regions:
+    top:
+      label: Top
+    upper_far_left:
+      label: Upper Far Left
+    upper_mid_left:
+      label: Upper Mid Left
+    upper_mid_right:
+      label: Upper Mid Right
+    upper_far_right:
+      label: Upper Far Right
+    middle:
+      label: Middle
+    lower_far_left:
+      label: Lower Far Left
+    lower_mid_left:
+      label: Lower Mid Left
+    lower_mid_right:
+      label: Lower Mid Right
+    lower_far_right:
+      label: Lower Far Right
+    bottom:
+      label: Bottom

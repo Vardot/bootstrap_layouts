@@ -1,0 +1,24 @@
+<div class="row">
+  {% if content.far_left %}
+  <div class="col-sm-3">
+    {{ content.far_left }}
+  </div>
+  {% endif %}
+  {% if content.mid_left %}
+  <div class="col-sm-3">
+    {{ content.mid_left }}
+  </div>
+  {% endif %}
+
+  {% if content.mid_right %}
+  <div class="col-sm-3">
+    {{ content.mid_right }}
+  </div>
+  {% endif %}
+
+  {% if content.far_right %}
+  <div class="col-sm-3">
+    {{ content.far_right }}
+  </div>
+  {% endif %}
+</div>

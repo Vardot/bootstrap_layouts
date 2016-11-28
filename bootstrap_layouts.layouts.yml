@@ -1,4 +1,4 @@
-booststrap-12:
+bootstrap-12:
   label: 'Bootstrap One Column 12'
   category: 'Bootstrap Layouts'
   path: 'templates/one-column/bootstrap-12'
@@ -7,7 +7,7 @@ booststrap-12:
   regions:
     main:
       label: 'Main content'
-booststrap-1-11:
+bootstrap-1-11:
   label: 'Bootstrap Two Column: 1-11'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-1-11'
@@ -18,7 +18,7 @@ booststrap-1-11:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-2-10:
+bootstrap-2-10:
   label: 'Bootstrap Two Column: 2-10'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-2-10'
@@ -29,7 +29,7 @@ booststrap-2-10:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-3-9:
+bootstrap-3-9:
   label: 'Bootstrap Two Column: 3-9'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-3-9'
@@ -40,7 +40,7 @@ booststrap-3-9:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-4-8:
+bootstrap-4-8:
   label: 'Bootstrap Two Column: 4-8'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-4-8'
@@ -51,7 +51,7 @@ booststrap-4-8:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-5-7:
+bootstrap-5-7:
   label: 'Bootstrap Two Column: 5-7'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-5-7'
@@ -62,7 +62,7 @@ booststrap-5-7:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-6-6:
+bootstrap-6-6:
   label: 'Bootstrap Two Column: 6-6'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-6-6'
@@ -73,7 +73,7 @@ booststrap-6-6:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-6-6-bricks:
+bootstrap-6-6-bricks:
   label: 'Bootstrap Two Column: 6-6 Bricks'
   category: 'Bootstrap Layouts'
   path: 'templates/bricks/bootstrap-6-6-bricks'
@@ -109,7 +109,7 @@ bootstrap-6-6-stacked:
       label: 'Sidebar Right'
     bottom:
       label: 'Bottom'
-booststrap-7-5:
+bootstrap-7-5:
   label: 'Bootstrap Two Column: 7-5'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-7-5'
@@ -120,7 +120,7 @@ booststrap-7-5:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-8-4:
+bootstrap-8-4:
   label: 'Bootstrap Two Column: 8-4'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-8-4'
@@ -131,7 +131,7 @@ booststrap-8-4:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-9-3:
+bootstrap-9-3:
   label: 'Bootstrap Two Column: 9-3'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-9-3'
@@ -142,7 +142,7 @@ booststrap-9-3:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-10-2:
+bootstrap-10-2:
   label: 'Bootstrap Two Column: 10-2'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-10-2'
@@ -153,7 +153,7 @@ booststrap-10-2:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-11-1:
+bootstrap-11-1:
   label: 'Bootstrap Two Column: 11-1'
   category: 'Bootstrap Layouts'
   path: 'templates/two-columns/bootstrap-11-1'
@@ -164,7 +164,7 @@ booststrap-11-1:
       label: 'Sidebar Right'
     sidebar_left:
       label: 'Sidebar Left'
-booststrap-2-8-2:
+bootstrap-2-8-2:
   label: 'Bootstrap Three Column: 2-8-2'
   category: 'Bootstrap Layouts'
   path: 'templates/three-columns/bootstrap-2-8-2'
@@ -177,7 +177,7 @@ booststrap-2-8-2:
       label: 'Main content'
     sidebar_right:
       label: 'Sidebar Right'
-booststrap-2-2-8:
+bootstrap-2-2-8:
   label: 'Bootstrap Three Column: 2-2-8'
   category: 'Bootstrap Layouts'
   path: 'templates/three-columns/bootstrap-2-2-8'
@@ -190,7 +190,7 @@ booststrap-2-2-8:
       label: 'Main content'
     sidebar_right:
       label: 'Sidebar Right'
-booststrap-8-2-2:
+bootstrap-8-2-2:
   label: 'Bootstrap Three Column: 8-2-2'
   category: 'Bootstrap Layouts'
   path: 'templates/three-columns/bootstrap-8-2-2'
@@ -203,7 +203,7 @@ booststrap-8-2-2:
       label: 'Main content'
     sidebar_right:
       label: 'Sidebar Right'
-booststrap-3-6-3:
+bootstrap-3-6-3:
   label: 'Bootstrap Three Column: 3-6-3'
   category: 'Bootstrap Layouts'
   path: 'templates/three-columns/bootstrap-3-6-3'
@@ -216,7 +216,7 @@ booststrap-3-6-3:
       label: 'Main content'
     sidebar_right:
       label: 'Sidebar Right'
-booststrap-4-4-4:
+bootstrap-4-4-4:
   label: 'Bootstrap Three Column: 4-4-4'
   category: 'Bootstrap Layouts'
   path: 'templates/three-columns/bootstrap-4-4-4'
@@ -246,7 +246,7 @@ bootstrap-4-4-4-stacked:
       label: 'Sidebar Right'
     bottom:
       label: 'Bottom'
-booststrap-5-5-2:
+bootstrap-5-5-2:
   label: 'Bootstrap Three Column: 5-5-2'
   category: 'Bootstrap Layouts'
   path: 'templates/three-columns/bootstrap-5-5-2'

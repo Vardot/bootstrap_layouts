@@ -262,7 +262,7 @@ booststrap-5-5-2:
 bootstrap-3-3-3-3:
   label: 'Bootstrap Four Column: 3-3-3-3'
   category: 'Bootstrap Layouts'
-  path: 'templates/stacked/bootstrap-3-3-3-3'
+  path: 'templates/four-columns/bootstrap-3-3-3-3'
   template: 'bootstrap-3-3-3-3'
   icon: 'bootstrap_fourcol_3_3_3_3.png'
   regions:
@@ -274,12 +274,12 @@ bootstrap-3-3-3-3:
       label: 'Mid Right'
     far_right:
       label: 'Far Right'
-bootstrap-3-3-3-3-stacked:
-  label: 'Bootstrap Four Column: 3-3-3-3 Stacked'
+bootstrap-3-3-3-3-bricks:
+  label: 'label: Bootstrap Four Column: 3-3-3-3 Bricks'
   category: 'Bootstrap Layouts'
-  path: 'templates/stacked/bootstrap-3-3-3-3-stacked'
-  template: 'bootstrap-3-3-3-3-stacked'
-  icon: 'bootstrap_fourcol_3_3_3_3_stacked.png'
+  path: 'templates/bricks/bootstrap-3-3-3-3-bricks'
+  template: 'bootstrap-3-3-3-3-bricks'
+  icon: 'bootstrap_fourcol_3_3_3_3_bricks.png'
   regions:
     top:
       label: 'Top'

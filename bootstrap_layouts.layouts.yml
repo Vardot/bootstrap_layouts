@@ -21,16 +21,16 @@ bs_1col_stacked:
   icon: images/1col-stacked.png
   template: templates/3.0.0/bs-1col-stacked
   regions:
-    header:
-      label: 'Header'
+    top:
+      label: 'Top'
       classes:
         - col-sm-12
     main:
       label: 'Content'
       classes:
         - col-sm-12
-    footer:
-      label: 'Footer'
+    bottom:
+      label: 'Bottom'
       classes:
         - col-sm-12
 

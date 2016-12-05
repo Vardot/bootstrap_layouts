@@ -41,8 +41,7 @@ abstract class BootstrapLayoutsHandlerBase extends PluginBase implements Bootstr
    * {@inheritdoc}
    */
   public function saveInstance($entity_id, BootstrapLayout $layout) {
-    $results = $this->saveInstances([$entity_id => $layout]);
-    return reset($results);
+    $this->saveInstances([$entity_id => $layout]);
   }
 
 }

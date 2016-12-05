@@ -2,6 +2,7 @@
 
 namespace Drupal\bootstrap_layouts\Plugin\Layout;
 
+use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Form\FormStateInterface;
@@ -30,6 +31,7 @@ class BootstrapLayoutsBase extends LayoutBase {
       'wrapper' => 'div',
       'classes' => [],
       'attributes' => '',
+      'add_region_classes' => TRUE,
     ];
   }
 
@@ -146,7 +148,7 @@ class BootstrapLayoutsBase extends LayoutBase {
 
     $form['layout']['add_layout_class'] = [
       '#type' => 'checkbox',
-      '#title' => $this->t('Add layout identifier class'),
+      '#title' => $this->t('Add layout specific class: <code>@class</code>', ['@class' => Html::cleanCssIdentifier($this->getPluginId())]),
       '#default_value' => (int) $form_state->getValue(['layout', 'add_layout_class'], $configuration['layout']['add_layout_class']),
     ];
 
@@ -190,6 +192,12 @@ class BootstrapLayoutsBase extends LayoutBase {
         '#options' => $classes,
         '#default_value' => $default_values['classes'],
         '#multiple' => TRUE,
+      ];
+
+      $form[$region]['add_region_classes'] = [
+        '#type' => 'checkbox',
+        '#title' => $this->t('Add region specific classes: <code>bs-region</code> and <code>bs-region--@region</code>', ['@region' => $region]),
+        '#default_value' => (int) $default_values['add_region_classes'],
       ];
 
       $form[$region]['attributes'] = [

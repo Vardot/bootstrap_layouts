@@ -147,6 +147,9 @@ function _bootstrap_layouts_preprocess_layout(array &$variables) {
   foreach ($layout->getSetting('regions') as $region => $region_settings) {
     $region_attributes = new Attribute(_bootstrap_layouts_parse_attributes($region_settings['attributes'], $tokens));
     $region_attributes->addClass(array_keys($region_settings['classes']));
+    if (!empty($region_settings['add_region_classes'])) {
+      $region_attributes->addClass(['bs-region', Html::cleanCssIdentifier("bs-region--$region")]);
+    }
     unset($region_settings['classes']);
     $region_settings['attributes'] = $region_attributes;
     $region_settings['content'] = isset($variables['content'][$region]) && !Element::isEmpty($variables['content'][$region]) ? $variables['content'][$region] : NULL;

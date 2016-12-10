@@ -2,6 +2,7 @@
 
 namespace Drupal\bootstrap_layouts;
 
+use Drupal\bootstrap_layouts\Plugin\Layout\BootstrapLayoutsBase;
 use Drupal\Component\Serialization\Yaml;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\Unicode;
@@ -9,9 +10,18 @@ use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Extension\ThemeHandlerInterface;
 use Drupal\Core\Theme\ThemeManagerInterface;
+use Drupal\layout_plugin\Plugin\Layout\LayoutPluginManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+/**
+ * Class BootstrapLayoutsManager
+ */
 class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
+
+  /**
+   * @var \Drupal\layout_plugin\Plugin\Layout\LayoutPluginManager
+   */
+  protected $layoutManager;
 
   /**
    * @var \Drupal\bootstrap_layouts\BootstrapLayoutsUpdateManager
@@ -32,11 +42,14 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
    *   The theme manager used to invoke the alter hook with.
    * @param \Drupal\Core\Theme\ThemeManagerInterface $theme_manager
    *   The theme manager used to invoke the alter hook with.
+   * @param \Drupal\layout_plugin\Plugin\Layout\LayoutPluginManager $layout_manager
+   *   The Layout Manager.
    * @param \Drupal\bootstrap_layouts\BootstrapLayoutsUpdateManager $update_manager
    *   The Bootstrap Layouts update manager.
    */
-  public function __construct(\Traversable $namespaces, CacheBackendInterface $cache_backend, ModuleHandlerInterface $module_handler, ThemeHandlerInterface $theme_handler, ThemeManagerInterface $theme_manager, BootstrapLayoutsUpdateManager $update_manager) {
+  public function __construct(\Traversable $namespaces, CacheBackendInterface $cache_backend, ModuleHandlerInterface $module_handler, ThemeHandlerInterface $theme_handler, ThemeManagerInterface $theme_manager, LayoutPluginManager $layout_manager, BootstrapLayoutsUpdateManager $update_manager) {
     parent::__construct($namespaces, $cache_backend, $module_handler, $theme_handler, $theme_manager, 'Drupal\bootstrap_layouts\Plugin\BootstrapLayouts\BootstrapLayoutsHandlerInterface', 'Drupal\bootstrap_layouts\Annotation\BootstrapLayoutsHandler');
+    $this->layoutManager = $layout_manager;
     $this->updateManager = $update_manager;
     $this->alterInfo('bootstrap_layouts_handler_info');
     $this->setCacheBackend($cache_backend, 'bootstrap_layouts_handler_info');
@@ -52,6 +65,7 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
       $container->get('module_handler'),
       $container->get('theme_handler'),
       $container->get('theme.manager'),
+      $container->get('plugin.manager.layout_plugin'),
       $container->get('plugin.manager.bootstrap_layouts.update')
     );
   }
@@ -66,6 +80,17 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
     foreach (array_keys($definitions) as $provider) {
       if (!$this->providerExists($provider)) {
         unset($definitions[$provider]);
+      }
+      else {
+        // Attempt to retrieve the theme human readable label first.
+        try {
+          $label = $this->themeHandler->getName($provider);
+        }
+        // Otherwise attempt to retrieve the module human readable label.
+        catch (\Exception $e) {
+          $label = $this->moduleHandler->getName($provider);
+        }
+        $definitions[$provider]['label'] = $label;
       }
     }
     return $definitions;
@@ -167,6 +192,29 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
     }
 
     return $classes;
+  }
+
+  /**
+   * Indicates if provided layout identifier is a Bootstrap Layouts layout.
+   *
+   * @param string $id
+   *   The layout identifier to test.
+   *
+   * @return bool
+   *   TRUE or FALSE
+   */
+  public function isBootstrapLayout($id) {
+    static $layouts;
+    if (!isset($layouts)) {
+      $layouts = [];
+      foreach (array_keys($this->layoutManager->getDefinitions()) as $layout_id) {
+        $plugin = $this->layoutManager->createInstance($layout_id);
+        if ($plugin instanceof BootstrapLayoutsBase) {
+          $layouts[] = $layout_id;
+        }
+      }
+    }
+    return in_array($id, $layouts);
   }
 
   /**

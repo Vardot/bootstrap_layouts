@@ -8,7 +8,18 @@ use Drupal\Component\Plugin\PluginInspectionInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
+/**
+ * Interface BootstrapLayoutsHandlerInterface
+ */
 interface BootstrapLayoutsHandlerInterface extends ContainerAwareInterface, ContainerFactoryPluginInterface, DerivativeInspectionInterface, PluginInspectionInterface {
+
+  /**
+   * Retrieves the human readable label for the plugin.
+   *
+   * @return string
+   *   The human readable label.
+   */
+  public function getLabel();
 
   /**
    * Loads a specific layout instance.

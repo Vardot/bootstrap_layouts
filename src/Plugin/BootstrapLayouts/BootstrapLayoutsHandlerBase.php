@@ -7,6 +7,9 @@ use Drupal\Core\Plugin\PluginBase;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
+/**
+ * Class BootstrapLayoutsHandlerBase
+ */
 abstract class BootstrapLayoutsHandlerBase extends PluginBase implements BootstrapLayoutsHandlerInterface {
 
   use ContainerAwareTrait;
@@ -27,6 +30,13 @@ abstract class BootstrapLayoutsHandlerBase extends PluginBase implements Bootstr
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static($configuration, $plugin_id, $plugin_definition, $container);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getLabel() {
+    return isset($this->pluginDefinition['label']) ? $this->pluginDefinition['label'] : $this->getPluginId();
   }
 
   /**

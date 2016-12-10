@@ -131,6 +131,23 @@ class BootstrapLayout {
   }
 
   /**
+   * Indicates if this layout is a Bootstrap Layouts layout.
+   *
+   * @return bool
+   *   TRUE or FALSE
+   *
+   * @todo This seems backwards, maybe refactor?
+   */
+  public function isBootstrapLayout() {
+    static $bootstrap_manager;
+    if (!isset($bootstrap_manager)) {
+      /** @var \Drupal\bootstrap_layouts\BootstrapLayoutsManager $bootstrap_manager */
+      $bootstrap_manager = \Drupal::service('plugin.manager.bootstrap_layouts');
+    }
+    return $bootstrap_manager->isBootstrapLayout($this->data['id']);
+  }
+
+  /**
    * Sets the layout identifier.
    *
    * @param string $id

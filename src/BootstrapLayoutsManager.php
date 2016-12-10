@@ -2,9 +2,9 @@
 
 namespace Drupal\bootstrap_layouts;
 
-use Drupal\bootstrap\Utility\Unicode;
 use Drupal\Component\Serialization\Yaml;
 use Drupal\Component\Utility\NestedArray;
+use Drupal\Component\Utility\Unicode;
 use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Extension\ThemeHandlerInterface;

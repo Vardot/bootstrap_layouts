@@ -4,4 +4,4 @@ description: This module is going to generate layouts with Bootstrap grid system
 core: 8.x
 package: Layout
 dependencies:
-  - layout_plugin
+  - layout_discovery

@@ -10,7 +10,7 @@ use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Extension\ThemeHandlerInterface;
 use Drupal\Core\Theme\ThemeManagerInterface;
-use Drupal\layout_plugin\Plugin\Layout\LayoutPluginManager;
+use Drupal\Core\Layout\LayoutPluginManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**

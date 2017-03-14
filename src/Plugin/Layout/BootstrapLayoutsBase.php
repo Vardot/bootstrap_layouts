@@ -6,12 +6,12 @@ use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\layout_plugin\Plugin\Layout\LayoutBase;
+use Drupal\Core\Layout\LayoutDefault;
 
 /**
  * Layout class for all bootstrap layouts.
  */
-class BootstrapLayoutsBase extends LayoutBase {
+class BootstrapLayoutsBase extends LayoutDefault {
 
   /**
    * {@inheritdoc}
@@ -49,7 +49,7 @@ class BootstrapLayoutsBase extends LayoutBase {
       ],
       'regions' => [],
     ];
-    foreach ($this->getRegionDefinitions() as $region => $info) {
+    foreach ($this->getPluginDefinition()->getRegionNames() as $region => $info) {
       $region_configuration = [];
       foreach (['wrapper', 'classes', 'attributes'] as $key) {
         if (isset($info[$key])) {
@@ -79,7 +79,7 @@ class BootstrapLayoutsBase extends LayoutBase {
     }
 
     // Remove any region configuration that doesn't apply to current layout.
-    $regions = $this->getRegionNames();
+    $regions = $this->getPluginDefinition()->getRegionNames();
     foreach (array_keys($configuration['regions']) as $region) {
       if (!isset($regions[$region])) {
         unset($configuration['regions'][$region]);
@@ -93,7 +93,7 @@ class BootstrapLayoutsBase extends LayoutBase {
    * {@inheritdoc}
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
-    $form = parent::buildConfigurationForm($form, $form_state);
+    //$form = parent::buildConfigurationForm($form, $form_state);
     $configuration = $this->getConfiguration();
 
     /** @var \Drupal\bootstrap_layouts\BootstrapLayoutsManager $bootstrap_layouts_manager */
@@ -164,7 +164,7 @@ class BootstrapLayoutsBase extends LayoutBase {
     }
 
     // Add each region's settings.
-    foreach ($this->getRegionNames() as $region => $region_label) {
+    foreach ($this->getPluginDefinition()->getRegionNames() as $region => $region_label) {
       $default_values = NestedArray::mergeDeep(
         $this->getRegionDefaults(),
         isset($configuration['regions'][$region]) ? $configuration['regions'][$region] : [],

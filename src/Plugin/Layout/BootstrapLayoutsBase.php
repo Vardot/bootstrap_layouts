@@ -11,7 +11,7 @@ use Drupal\Core\Layout\LayoutDefault;
 /**
  * Layout class for all bootstrap layouts.
  */
-class BootstrapLayoutsBase extends LayoutDefault {
+class BootstrapLayoutsBase extends LayoutDefault implements PluginFormInterface {
 
   /**
    * {@inheritdoc}
@@ -238,4 +238,10 @@ class BootstrapLayoutsBase extends LayoutDefault {
     $this->configuration['regions'] = $regions;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {
+
+  }
 }

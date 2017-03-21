@@ -6,6 +6,7 @@ use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Plugin\PluginFormInterface;
 use Drupal\Core\Layout\LayoutDefault;
 
 /**
@@ -49,7 +50,7 @@ class BootstrapLayoutsBase extends LayoutDefault implements PluginFormInterface 
       ],
       'regions' => [],
     ];
-    foreach ($this->getPluginDefinition()->getRegionNames() as $region => $info) {
+    foreach ($this->getPluginDefinition()->getRegions() as $region => $info) {
       $region_configuration = [];
       foreach (['wrapper', 'classes', 'attributes'] as $key) {
         if (isset($info[$key])) {
@@ -79,7 +80,7 @@ class BootstrapLayoutsBase extends LayoutDefault implements PluginFormInterface 
     }
 
     // Remove any region configuration that doesn't apply to current layout.
-    $regions = $this->getPluginDefinition()->getRegionNames();
+    $regions = $this->getPluginDefinition()->getRegions();
     foreach (array_keys($configuration['regions']) as $region) {
       if (!isset($regions[$region])) {
         unset($configuration['regions'][$region]);
@@ -164,7 +165,8 @@ class BootstrapLayoutsBase extends LayoutDefault implements PluginFormInterface 
     }
 
     // Add each region's settings.
-    foreach ($this->getPluginDefinition()->getRegionNames() as $region => $region_label) {
+    foreach ($this->getPluginDefinition()->getRegions() as $region => $region_info) {
+      $region_label = $region_info['label'];
       $default_values = NestedArray::mergeDeep(
         $this->getRegionDefaults(),
         isset($configuration['regions'][$region]) ? $configuration['regions'][$region] : [],
@@ -228,7 +230,7 @@ class BootstrapLayoutsBase extends LayoutDefault implements PluginFormInterface 
 
 
     $regions = [];
-    foreach (array_keys($this->getRegionNames()) as $name) {
+    foreach (array_keys($this->getPluginDefinition()->getRegions()) as $name) {
       if ($region = $form_state->getValue($name, $defaults)) {
         // Apply Xss::filter to attributes.
         $region['attributes'] = Xss::filter($region['attributes']);

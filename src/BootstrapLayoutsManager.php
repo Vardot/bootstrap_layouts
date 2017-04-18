@@ -19,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
 
   /**
-   * @var \Drupal\layout_plugin\Plugin\Layout\LayoutPluginManager
+   * @var \Drupal\Core\Layout\LayoutPluginManager
    */
   protected $layoutManager;
 
@@ -42,7 +42,7 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
    *   The theme manager used to invoke the alter hook with.
    * @param \Drupal\Core\Theme\ThemeManagerInterface $theme_manager
    *   The theme manager used to invoke the alter hook with.
-   * @param \Drupal\layout_plugin\Plugin\Layout\LayoutPluginManager $layout_manager
+   * @param \Drupal\Core\Layout\LayoutPluginManager $layout_manager
    *   The Layout Manager.
    * @param \Drupal\bootstrap_layouts\BootstrapLayoutsUpdateManager $update_manager
    *   The Bootstrap Layouts update manager.
@@ -65,7 +65,7 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
       $container->get('module_handler'),
       $container->get('theme_handler'),
       $container->get('theme.manager'),
-      $container->get('plugin.manager.layout_plugin'),
+      $container->get('plugin.manager.core.layout'),
       $container->get('plugin.manager.bootstrap_layouts.update')
     );
   }

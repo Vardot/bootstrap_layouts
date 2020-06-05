@@ -2,6 +2,7 @@ name: Bootstrap Layouts
 type: module
 description: This module is going to generate layouts with Bootstrap grid system.
 core: 8.x
+core_version_requirement: '^8 || ^9'
 package: Layout
 dependencies:
   - drupal:layout_discovery

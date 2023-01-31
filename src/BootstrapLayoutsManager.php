@@ -284,9 +284,10 @@ class BootstrapLayoutsManager extends BootstrapLayoutsPluginManager {
                 }
               }
               else {
+                // @noRector
                 drupal_set_message($message, $type);
                 if ($error) {
-                  drupal_set_message($error, 'error');
+                  \Drupal::messenger()->addError($error);
                 }
               }
             }

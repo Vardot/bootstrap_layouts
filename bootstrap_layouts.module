@@ -26,7 +26,7 @@ function bootstrap_layouts_theme_registry_alter(&$theme_registry) {
   $layout_theme_hooks = [];
   /** @var \Drupal\Core\Layout\LayoutDefinition $info */
   foreach ($layouts as $info) {
-    if ($info->getClass() === 'Drupal\bootstrap_layouts\Plugin\Layout\BootstrapLayoutsBase') {
+    if (is_a($info->getClass(), 'Drupal\bootstrap_layouts\Plugin\Layout\BootstrapLayoutsBase', TRUE)) {
       $layout_theme_hooks[] = $info->getThemeHook();
     }
   }
